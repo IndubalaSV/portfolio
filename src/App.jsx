@@ -6,11 +6,21 @@ export default function App() {
     {
       title: "Gratitude Journal App",
       description: "A journaling web app built with FastAPI + React.",
-      image: "https://images.unsplash.com/photo-1528938102132-4a9276b8e320",
+      image: "./gratitudes.jpg",
       technologies: ["FastAPI", "React", "Python", "JavaScript"],
       links: {
         demo: "https://cheerlog.indubuilds.xyz",
         github: "https://github.com/IndubalaSV/gratitude-fastapi",
+      },
+    },
+    {
+      title: "Mental wellness app",
+      description: "Literary wisdom app built with React.",
+      image: "./lantern.jpg",
+      technologies: ["React", "JavaScript"],
+      links: {
+        demo: "https://lantern-sepia.vercel.app/",
+        github: "https://github.com/IndubalaSV/lantern",
       },
     },
   ];
