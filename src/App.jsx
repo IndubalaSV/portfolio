@@ -16,7 +16,7 @@ export default function App() {
     {
       title: "Mental wellness app",
       description: "Literary wisdom app built with React.",
-      image: "./lantern.jpg",
+      image: "./lantern.png",
       technologies: ["React", "JavaScript"],
       links: {
         demo: "https://lantern-sepia.vercel.app/",
