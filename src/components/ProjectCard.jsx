@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import "./index.css";
+import "../index.css";
 
 const ProjectCard = ({ project }) => {
   return (
