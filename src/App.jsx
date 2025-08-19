@@ -15,7 +15,7 @@ export default function App() {
     },
     {
       title: "Mental wellness app",
-      description: "Literary wisdom app built with React.",
+      description: "Literary wisdom app built with React and Gemini.",
       image: "./lantern.png",
       technologies: ["React", "JavaScript"],
       links: {
