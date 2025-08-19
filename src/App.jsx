@@ -23,6 +23,16 @@ export default function App() {
         github: "https://github.com/IndubalaSV/lantern",
       },
     },
+    {
+      title: "Fortune Oracle",
+      description: "Fortune cookie app built with React.",
+      image: "./fortune.png",
+      technologies: ["React", "JavaScript"],
+      links: {
+        demo: "https://fortune.indubuilds.xyz/",
+        github: "https://github.com/IndubalaSV/fortune-cookie-app",
+      },
+    },
   ];
 
   return (
