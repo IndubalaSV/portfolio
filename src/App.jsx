@@ -4,8 +4,8 @@ import ProjectCard from "./ProjectCard";
 export default function App() {
   const projects = [
     {
-      title: "Gratitude Journal App",
-      description: "A journaling web app built with FastAPI + React.",
+      title: "Gratitude Journal",
+      description: "Journaling app built with FastAPI / React.",
       image: "./gratitudes.jpg",
       technologies: ["FastAPI", "React", "Python", "JavaScript"],
       links: {
