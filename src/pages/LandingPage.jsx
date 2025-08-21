@@ -2,49 +2,6 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 
 const LandingPage = () => {
-  const mainProjects = [
-    {
-      title: "Gratitude Journal",
-      description: "Journaling app built with FastAPI / React.",
-      image: "./gratitudes.jpg",
-      technologies: ["FastAPI", "React", "Python", "JavaScript"],
-      links: {
-        demo: "https://cheerlog.indubuilds.xyz",
-        github: "https://github.com/IndubalaSV/gratitude-fastapi",
-      },
-    },
-    {
-      title: "Mental wellness app",
-      description: "Literary wisdom app built with React and Gemini.",
-      image: "./lantern.png",
-      technologies: ["React", "JavaScript"],
-      links: {
-        demo: "https://lantern-sepia.vercel.app/",
-        github: "https://github.com/IndubalaSV/lantern",
-      },
-    },
-  ];
-
-  const sideProjects = [
-    {
-      title: "Fortune Oracle",
-      description: "Fortune cookie app built with React.",
-      image: "./fortune.png",
-      technologies: ["React", "JavaScript"],
-      links: {
-        demo: "https://fortune.indubuilds.xyz/",
-        github: "https://github.com/IndubalaSV/fortune-cookie-app",
-      },
-    },
-  ];
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div className="single-page-portfolio">
       {/* Landing Section */}
@@ -69,18 +26,12 @@ const LandingPage = () => {
 
           {/* Navigation Links */}
           <div className="landing-nav">
-            <button
-              onClick={() => scrollToSection("main-projects")}
-              className="nav-button"
-            >
+            <a href="/main-projects" className="nav-button">
               Main Projects
-            </button>
-            <button
-              onClick={() => scrollToSection("side-projects")}
-              className="nav-button"
-            >
+            </a>
+            <a href="/side-projects" className="nav-button">
               Side Projects
-            </button>
+            </a>
           </div>
 
           {/* Social Links */}
@@ -134,49 +85,6 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-
-      {/* Main Projects Section */}
-      <section id="main-projects" className="projects-section">
-        <div className="projects-container">
-          <header className="projects-header">
-            <p className="projects-subtitle">Primary projects</p>
-          </header>
-
-          <div className="projects-grid-compact">
-            {mainProjects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Side Projects Section */}
-      <section id="side-projects" className="projects-section">
-        <div className="projects-container">
-          <header className="projects-header">
-            <p className="projects-subtitle">
-              Experimental projects and learning exercises
-            </p>
-          </header>
-
-          <div className="projects-grid-compact">
-            {sideProjects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Back to Top Button */}
-      <button
-        onClick={() => scrollToSection("landing")}
-        className="back-to-top"
-        title="Back to top"
-      >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
-        </svg>
-      </button>
     </div>
   );
 };

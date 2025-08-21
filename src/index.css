@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Home icon button for navigation */
+.home-icon-btn {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    color: var(--text-primary);
+    transition: color 0.2s;
+}
+
+.home-icon-btn:hover {
+    color: var(--accent-color, #007bff);
+}
+
+
 /* CSS Custom Properties for Consistency */
 :root {
     --primary-bg: #fafafa;
@@ -26,7 +46,7 @@
 }
 
 html {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--primary-bg);
     font-size: 14px;
     scroll-behavior: smooth;
@@ -94,7 +114,6 @@ a:hover {
 
 .landing-name {
     font-size: 2.5rem;
-    letter-spacing: 0.08rem;
     font-weight: 700;
     color: var(--text-primary);
     margin: 0 0 0.5rem 0;
@@ -190,8 +209,9 @@ a:hover {
     background-color: var(--secondary-bg);
     border-top: 1px solid var(--border-color);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
 }
 
 .projects-section:nth-child(odd) {
@@ -232,8 +252,8 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    justify-content: center;
-    align-items: stretch;
+    justify-content: flex-start;
+    align-items: flex-start;
     max-width: 100%;
     margin: 0 auto;
 }
