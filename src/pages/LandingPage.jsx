@@ -37,7 +37,7 @@ const LandingPage = () => {
           {/* Social Links */}
           <div className="social-links">
             <a
-              href="https://x.com/coffified"
+              href="https://x.com/indu_2k"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
