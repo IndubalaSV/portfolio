@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";
 
 const mainProjects = [
+  /*
   {
     title: "Gratitude Journal",
     description:
@@ -14,6 +15,7 @@ const mainProjects = [
       github: "https://github.com/IndubalaSV/gratitude-fastapi",
     },
   },
+  */
   {
     title: "Mental wellness app",
     description:
